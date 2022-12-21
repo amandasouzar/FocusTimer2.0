@@ -1,0 +1,139 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root {
+    font-size: 62.5%;
+}
+.LightMode, .DarkMode {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: 12.617rem;
+
+    display: flex;
+    flex-direction: row;
+    gap: 19.2rem;
+    align-items: center;
+    justify-content: center;
+
+    background-color: white;
+
+    height: 100vh;
+}
+#SwitchLight, #SwitchDark {
+    position: absolute;
+    top: 6rem;
+    right: 6rem;
+
+    background: none;
+    border: none;
+
+    cursor: pointer;
+}
+.TimerNumbers {
+    display: flex;
+    flex-direction: row;
+
+    margin-bottom: 4.8rem;
+}
+.TimerButtons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.TimerButtons button {
+    border: none;
+    background-color: transparent;
+}
+.TimerButtons button:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+}
+.right-side, .right-side-2 {
+    display: flex;
+    flex-direction: column;
+    gap: 3.2rem;
+    align-items: center;
+}
+.right-side .top, .right-side-2 .top {
+    display: flex;
+    flex-direction: row;
+    gap: 3.2rem;
+}
+.right-side .bottom, .right-side-2 .bottom {
+    display: flex;
+    flex-direction: row;
+    gap: 3.2rem;
+
+}
+.right-side .ForestSoundOn, .right-side .RainSoundOn, .right-side .CoffeeSoundOn, .right-side .FireSoundOn{
+    border: none;
+    background-color: #E1E1E6;
+    border-radius: 24px;
+
+    padding: 2.4rem;
+}
+.right-side .ForestSoundOff, .right-side .RainSoundOff, .right-side .CoffeeSoundOff, .right-side .FireSoundOff {
+    border: none;
+    background-color: #E1E1E6;
+    border-radius: 24px;
+    width: 17.7rem;
+
+    padding: 4.8rem;
+}
+.right-side button img {
+    margin-bottom: 3.2rem;
+}
+.right-side button:hover {
+    background-color: #02799D;
+    cursor: pointer;
+}
+input .ForestSlider, input .RainSlider, input .CoffeeSlider, input .FireSlider {
+    width: 9rem;
+    height: 1.6rem;
+}
+.hide {
+    display: none;
+}
+
+.none {
+    display: none;
+}
+
+
+.DarkMode {
+    background-color: #121214;
+
+    color: white;
+}
+.right-side-2 .ForestSoundOn, .RainSoundOn, .CoffeeSoundOn, .FireSoundOn{
+    border: none;
+    background-color: #29292E;
+    border-radius: 24px;
+
+    padding: 2.4rem;
+}
+.right-side-2 .ForestSoundOff, .RainSoundOff, .CoffeeSoundOff, .FireSoundOff {
+    border: none;
+    background-color: #29292E;
+    border-radius: 24px;
+    width: 17.7rem;
+    
+    padding: 4.8rem;
+}
+.right-side-2 button img {
+    margin-bottom: 3.2rem;
+}
+
+.right-side-2 button:hover {
+    background-color: #0A3442;
+    cursor: pointer;
+}
+
+@media (max-width: 900px) {
+    body {
+        display: flex;
+        flex-direction: column;
+    }
+}

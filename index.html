@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Focus Timer 2.0</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="LightMode">
+        <button id="SwitchLight"><img src="/FOCUSTIMER/assets/icon.svg" alt=""></button>
+        <div class="left-side">
+            <div class="TimerNumbers">
+                <span class="Minutes">25</span>
+                <span>:</span>
+                <span class="Seconds">00</span>
+            </div>
+            <div class="TimerButtons">
+                <button class="PlayButton"><img src="/FOCUSTIMER/assets/play.svg" alt=""></button>
+                <button class="StopButton"><img src="/FOCUSTIMER/assets/stop.svg" alt=""></button>
+                <button class="PlusButton"><img src="/FOCUSTIMER/assets/+.svg" alt=""></button>
+                <button class="LessButton"><img src="/FOCUSTIMER/assets/-.svg" alt=""></button>
+            </div>
+        </div>
+        <div class="right-side">
+            <div class="top">
+                <button class="ForestSoundOff">
+                    <img src="/FOCUSTIMER/assets/iconForest.svg"  alt="">
+                </button>
+                <button class="ForestSoundOn none" style="background-color: #02799D;">
+                    <img src="/FOCUSTIMER/assets/iconForest2.svg" alt="" >
+                    <div class="SliderContainer">
+                        <input type="range"min="1" max="100" value="50"  class="ForestSlider1">
+                    </div>
+                </button>
+                <button class="RainSoundOff">
+                    <img src="/FOCUSTIMER/assets/VectorRain.svg" alt="">
+                </button>
+                <button class="RainSoundOn none" style="background-color: #02799D;">
+                    <img src="/FOCUSTIMER/assets/VectorRain2.svg" alt="">
+                    <div class="SliderContainer">
+                        <input type="range"min="1" max="100" value="50"  class="RainSlider1">
+                    </div>
+                </button>
+            </div>
+            <div class="bottom">
+                <button class="CoffeeSoundOff">
+                    <img src="/FOCUSTIMER/assets/iconCoffee.svg" alt="">
+                </button>
+                <button class="CoffeeSoundOn none" style="background-color: #02799D;">
+                    <img src="/FOCUSTIMER/assets/iconCoffee2.svg" alt="">
+                    <div class="SliderContainer">
+                        <input type="range"min="1" max="100" value="50"  class="CoffeeSlider1">
+                    </div>
+                </button>
+                <button class="FireSoundOff">
+                    <img src="/FOCUSTIMER/assets/VectorFire.svg" alt="">
+                </button>
+                <button class="FireSoundOn none" style="background-color: #02799D;">
+                    <img src="/FOCUSTIMER/assets/VectorFire2.svg" alt="">
+                    <div class="SliderContainer">
+                        <input type="range"min="1" max="100" value="50"  class="FireSlider1">
+                    </div>
+                </button>
+            </div>
+        </div>
+    </div>
+    <div class="DarkMode hide">
+        <button id="SwitchDark"><img src="/FOCUSTIMER/assets/icondark.svg" alt=""></button>
+        <div class="left-side-2 hide">
+            <div class="TimerNumbers">
+                <span class="Minutes-2">25</span>
+                <span>:</span>
+                <span class="Seconds-2">00</span>
+            </div>
+            <div class="TimerButtons">
+                <button class="PlayButton"><img src="/FOCUSTIMER/assets/play2.svg" alt=""></button>
+                <button class="StopButton"><img src="/FOCUSTIMER/assets/stop2.svg" alt=""></button>
+                <button class="PlusButton"><img src="/FOCUSTIMER/assets/+2.svg" alt=""></button>
+                <button class="LessButton"><img src="/FOCUSTIMER/assets/-2.svg" alt=""></button>
+            </div>
+        </div>
+        <div class="right-side-2 hide">
+            <div class="top">
+                <button class="ForestSoundOff">
+                    <img src="/FOCUSTIMER/assets/iconForest2.svg" alt="">
+                </button>
+                <button class="ForestSoundOn none" style="background-color: #0A3442;">
+                    <img src="/FOCUSTIMER/assets/iconForest2.svg" alt="">
+                    <div class="SliderContainer">
+                        <input type="range" min="1" max="100" class="ForestSlider2">
+                    </div>
+                </button>
+                <button class="RainSoundOff">
+                    <img src="/FOCUSTIMER/assets/VectorRain2.svg" alt="">
+                </button>
+                <button class="RainSoundOn none" style="background-color: #0A3442;">
+                    <img src="/FOCUSTIMER/assets/VectorRain2.svg" alt="">
+                    <div class="SliderContainer">
+                        <input type="range"min="1" max="100" class="RainSlider2">
+                    </div>
+                </button>
+            </div>
+            <div class="bottom">
+                <button class="CoffeeSoundOff">
+                    <img src="/FOCUSTIMER/assets/iconCoffee2.svg" alt="">
+                </button>
+                <button class="CoffeeSoundOn none" style="background-color: #0A3442;">
+                    <img src="/FOCUSTIMER/assets/iconCoffee2.svg" alt="">
+                    <div class="SliderContainer">
+                        <input type="range" min="1" max="100" class="CoffeeSlider2">
+                    </div>
+                </button>
+                <button class="FireSoundOff">
+                    <img src="/FOCUSTIMER/assets/VectorFire2.svg" alt="">
+                </button>
+                <button class="FireSoundOn none" style="background-color: #0A3442;">
+                    <img src="/FOCUSTIMER/assets/VectorFire2.svg" alt="">
+                    <div class="SliderContainer">
+                        <input type="range"min="1" max="100" class="FireSlider2">
+                    </div>
+                </button>
+            </div>
+        </div>
+    </div>
+    <script src="/FOCUSTIMER/js/index.js" type="module"></script>
+</body>
+</html>
